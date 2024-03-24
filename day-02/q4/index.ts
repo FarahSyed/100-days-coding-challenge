@@ -1,0 +1,1 @@
+console.log(`Felienne Hermans once said, “Confusion is part of programming.”`); // Print a quote with its author's name
