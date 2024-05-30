@@ -5,6 +5,8 @@ Today's task is to learn about:
 
 - [Fetching Data](https://nextjs.org/learn/dashboard-app/fetching-data)
 
+Continued fetching data in day-89 folder, as Postgres Databases limit has reached
+
 ## Fetching Data
 
 In this task, we explored different methods to fetch data in a Next.js application and built out the dashboard overview page. Here’s a summary of the key concepts:
@@ -81,8 +83,8 @@ In this task, we explored different methods to fetch data in a Next.js applicati
 **Request Waterfalls:** Sequence of network requests dependent on each other.
 #### Example:
 ```javascript
-const revenue = await fetchRevenue();
-const latestInvoices = await fetchLatestInvoices();
+const revenue = await fetchRevenue();  // wait for fetchRevenue() to finish
+const latestInvoices = await fetchLatestInvoices();    // wait for fetchLatestInvoices() to finish
 ```
 
 ### Parallel Data Fetching
